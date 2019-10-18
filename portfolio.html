@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway&display=swap" rel="stylesheet">
+<html>
+    <style>
+        #navbar{
+            display: block;
+            background-color: rgba(8, 8, 8, 0.8);
+            width: 100vw;
+            position: fixed;
+            text-transform: uppercase;
+            overflow: hidden;
+            top: 0%;
+
+
+        }
+        #navbar ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        ul>li>a{
+            text-decoration: none;
+            color: white;
+            float: left;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+        }
+        #navbar>ul>li>a:hover{
+            color: crimson;
+        }
+        #welcome-section{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            background-image: url('https://jpk-image-hosting.s3.amazonaws.com/skyline.jpg');
+            background-color: rgb(224, 224, 228)
+        }
+        #welcome-section h1{
+            font-size: 5vmax;
+            font-family: 'Dancing Script', cursive;
+            color: crimson;
+        }
+        #welcome-section h4{
+            font-size: 2vmax;
+            font-family: 'Raleway', sans-serif;
+            color:  rgb(37, 35, 35);
+        }
+        .fbtn,.fccbtn,.cpbtn{
+            border-radius: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            font-size: 2vmin;
+            font-family: 'Raleway', sans-serif;
+            height: 100%;
+        }
+        .fbtn:hover{
+            color: white;
+            background-color: rgb(55, 97, 236);
+        }
+        .fccbtn:hover{
+            color: white;
+            background-color: rgb(22, 100, 22);
+        }
+        .cpbtn:hover{
+            color: white;
+            background-color: rgb(26, 24, 24);
+        }
+        #about{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            background: url(https://images.unsplash.com/photo-1559732654-95221336a648?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+        }
+        #about img{
+            margin-top: 20px;
+            max-width: 30%;
+            display: block;
+            width: 20%;
+            height: 40%;
+            border-radius: 50%;
+            image-rendering: initial;
+            margin-left: 180px;
+            margin-top: 100px;
+        }
+        #about h2{
+            font-size: 3vw;
+            color: white;
+            margin-left: 10px;
+            font-family: 'Raleway', sans-serif;
+        }
+        #about p{
+            font-size: 1.5vw;
+            color: white;
+            margin-left: 10px;
+            font-family: 'Raleway', sans-serif;
+        }
+        #projects{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            background: url(https://images.unsplash.com/photo-1491317002516-6356a658b3e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
+
+        }
+        #project-grid{
+            display: flex;
+            flex-direction: row;
+            margin-top: 200px;
+            justify-content: center;
+        }
+        #project-grid > a{
+            height: 55%;
+            text-decoration: none;
+            justify-content: space-around;
+            background-color: transparent;
+            font-size: 2vw;
+            font-family: 'Raleway', sans-serif;
+        }
+        #project-grid > a> img{
+            margin-left: 20px;
+            border: solid;
+            border-color: black;
+            border-radius: 4px;
+        }
+        #project-grid > a>p{
+            text-align: center;
+            color: black;
+        }
+        #project-grid > a>p:hover,#project-grid > a> img:hover{
+            color: rgb(4, 197, 149);
+        }
+        .project-tile{
+            justify-content: center;
+        }
+        #contact{
+            top: 0%;
+            width: 100%;
+            height: 100vh;
+            background: url(https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+            text-align: center;
+        }
+        #contact ul{
+            margin-top: 15%;
+            list-style: none;
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.8vw;
+        }
+        section > #welcome-section,#about,#projects,#contact {
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        #footer{
+            display: block;
+            background-color: rgba(8,8,8,0.8);
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            font-size: 3vmin;
+            text-align: center;
+            width: 100%;
+            height: 5vh;
+        }
+        @media only screen and (max-width: 768px){
+           #navbar{
+               width: 100%;
+               height: 100vh;
+           }
+           #welcome-section,#about,#contact{
+               width: 100%;
+               height: 60vh;
+           }
+           #projects{
+               width: 100%;
+               height: 60vh;
+           }
+           #project-grid{
+               display: flex;
+               flex-direction: column;
+           }
+           #footer{
+               width: 100%;
+               height: 3vh;
+           }
+        }
+    </style>
+    <body>
+        <nav id="navbar">
+          <ul>
+              <li><a href="#welcome-section">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <section id="welcome-section">
+            <div id="section-1">
+            <h1>Osama Khan</h1>
+            <hr size="3" color="crimson">
+            <h4>Developer | Creator | Student</h4>
+        </div>
+            <div>
+            <a class="profile-link" href="https://www.facebook.com/kk.osama99" target="_blank"><button class="fbtn" type="button"><i class="fa fa-facebook"></i> Facebook</button></a>
+            <a class="profile-link" href="https://www.freecodecamp.org/osamakhan" target="_blank"><button class="fccbtn"><i class="fa fa-free-code-camp"></i> FreeCodeCamp</button></a>
+            <a class="profile-link" href="https://codepen.io/osamakhan/" target="_blank"><button class="cpbtn"><i class="fa fa-codepen"></i> CodePen</button></a>
+           
+        </div>
+        </section>
+        <section id="about">
+            <div>
+            <h2>OSAMA KHAN</h2>
+          <p>I am a Computer Science student in (UBIT) Karachi University,<br>currently learning React native online from free code camp.<br>I have completed first module of course and now I'm a certified<br>web designer from FCC.<br>Inspite of techinal
+              field I am a tutor and also worked as a accountant.
+          </p>
+          <p>“The programmer, like the poet, works only slightly removed<br>from pure thought-stuff.He builds his castles in the air, from air,<br>creating by exertion of the imagination.Few media of creation are so flexible,<br>so easy to polish and rework, so readily capable of realizing<br>grand conceptual structures.”<br>― Frederick P. Brooks Jr.</p>
+        </div>
+          <img src="https://scontent.fkhi10-1.fna.fbcdn.net/v/t1.0-9/28471154_1672633776148673_1225016578719750856_n.jpg?_nc_cat=100&_nc_oc=AQmUDsj6xs8qCOek0er5k3g2e3RrHecST7lK3NglAxAcDK_FK21pSw-k84iPIRV2IRY&_nc_ht=scontent.fkhi10-1.fna&oh=bea3f2ccbdbd1a4c3c96975bea2ccaf8&oe=5DEAF3C9" alt="Osama Khan">
+        </section>
+        <section id="projects" class="project-tile">
+            
+            <div id="project-grid">
+             <a href="https://codepen.io/osamakhan/full/ZgYjdO" target="_blank">
+             <img src="survey.JPG" alt="project" width="360px">
+             <p><b>Survey Form</b></p>
+            </a>
+            <a href="https://codepen.io/osamakhan/full/QebzRE" target="_blank"><img src="documentation.JPG" alt="Documentation page" height="235px;"> <p><b>Documentation Page</b></p></a>
+            <a href="https://codepen.io/osamakhan/full/YmKOwo" target="_blank"><img src="tribute.JPG" alt="tribute page" height="235px"><p><b>Tribute Page</b></p></a>
+            </div>
+
+        </section>
+        <section id="contact">
+            <ul>
+                <li><h1 style="font-size: 30px;">Contact Me</h1></li>
+                <li><h2 style="font-size: 25px;">Get in touch with me khanosama302@gmail.com</h2></li>
+                <li><h2 style="font-size: 25px;">or find me on</h2></li>
+            </ul>
+            <div>
+                    <a href="https://www.facebook.com/kk.osama99" target="_blank"><button class="fbtn" type="button"><i class="fa fa-facebook"></i> Facebook</button></a>
+                    <a href="https://www.freecodecamp.org/osamakhan" target="_blank"><button class="fccbtn"><i class="fa fa-free-code-camp"></i> FreeCodeCamp</button></a>
+                    <a href="https://codepen.io/osamakhan/" target="_blank"><button class="cpbtn"><i class="fa fa-codepen"></i> CodePen</button></a>
+                   
+                </div>
+        </section>
+        <hr>
+        <footer id="footer"> 
+            Copyright to Osama Khan, all rights reserved 
+        </footer>
+    </body>
+</html>
